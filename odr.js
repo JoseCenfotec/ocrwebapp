@@ -20,7 +20,9 @@ window.addEventListener('load', function () {
 
  var btnSend = document.getElementById("btnSend");
  btnSend.addEventListener("click", callWebService, false);
+
  drawCanvasGrid();
+
  dimg = new Array(ih);
  for (var i = 0; i < ih; i++) {
  	dimg[i] = new Array(iw);
@@ -148,5 +150,5 @@ beforeSend: function (xhrObj) {
  });
  }
 
- init();
-}, false);
+ init()
+}}, false);
